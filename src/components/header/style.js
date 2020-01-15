@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import logPic from '../../assets/img/logo-jianshu.png'
 import hometPic from '../../assets/img/home.svg'
+import downPic from '../../assets/img/download.svg'
+import search from '../../assets/img/search.svg'
+import searchSelected from '../../assets/img/search-selected.svg'
 
 export const HeaderWrapper = styled.div`
     height: 56px;
@@ -77,22 +80,89 @@ export const RegisterLink = styled.a`
     border: 1px solid #ea6f5a; 
 `
 export const HomeBtn = styled.a`
+    float: left;
     height: 56px;
     line-height: 26px;
     padding: 15px;
     overflow: hidden;
-    width: 59px;
+    width: 89px;
+    height: 56px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &.download-box {
+        width: 122px;
+        margin-right: 10px;
+    }
 `
 export const HomePic = styled.span`
     width: 26px;
-    height: 20px;
+    height: 26px;
     float: left;
     background: url(${hometPic}) no-repeat center;
     background-size: 20px 20px;
+    background-position: 0 2px;
+    &.down-pic {
+        background: url(${downPic}) no-repeat center;
+        background-size: 24px 24px;
+        background-position: 0 2px;
+    }
 `
 export const HomeTxt = styled.span`
-    width: 26px;
     height: 20px;
     float: right;
     color: #ea6f5a;
+    &.down-txt {
+        color: #8a8a8a;
+    }
+`
+export const SearchWrap = styled.div`
+    float: left;
+    height: 100%;
+    width: 240px;
+    padding-top: 9px;
+    position: relative;
+    &:: after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: url(${search}) no-repeat center;
+        background-size: 18px 18px;
+        right: 14px;
+        top: 19px;
+    }
+    &.selected {
+        width: 360px;
+        &:: after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(${search}) no-repeat center;
+            background-size: 16px 16px;
+            right: 4px;
+            top: 13px;
+            border-radius: 50%;
+            background-color: #8a8a8a;
+        } 
+    }
+    >input {
+        border: none;
+        box-sizing: border-box;
+        width: 100%;
+        height: 38px;
+        border-radius: 19px;
+        padding-right: 40px;
+        &: focus {
+            outline: none;
+        }
+        padding-left: 24px;
+        font-size: 14px;
+        &::-webkit-input-placeholder {
+            color: #999;
+            font-size: 14px;
+        }
+        transition: all 1s liner;
+        background-color: #eee;
+    }
 `
