@@ -138,7 +138,7 @@ export const SearchWrap = styled.div`
             position: absolute;
             width: 30px;
             height: 30px;
-            background: url(${search}) no-repeat center;
+            background: url(${searchSelected}) no-repeat center;
             background-size: 16px 16px;
             right: 4px;
             top: 13px;
