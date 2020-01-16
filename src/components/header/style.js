@@ -131,8 +131,11 @@ export const SearchWrap = styled.div`
         right: 14px;
         top: 19px;
     }
-    &.selected {
-        width: 360px;
+    &.search-enter, &.search-exit {
+        transition: all .5s ease;
+    }
+    &.search-enter-active, &.search-enter-done {
+        width: 340px;
         &:: after {
             content: "";
             position: absolute;
@@ -162,7 +165,19 @@ export const SearchWrap = styled.div`
             color: #999;
             font-size: 14px;
         }
-        transition: all 1s liner;
         background-color: #eee;
+        &.input-search {
+            transition: all .5s;
+        }
     }
+`
+export const LogInBtn = styled.a`
+    float: right;
+    height: 100%;
+    width: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #969696;
+    font-size: 14px;
+    cursor: pointer;
 `
