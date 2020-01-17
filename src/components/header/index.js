@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { HeaderWrapper, WidthLimit, Log, Container, WriteWrap, RegisterLink, HomeBtn, HomePic, HomeTxt, SearchWrap, LogInBtn } from './style'
+import { HeaderWrapper, WidthLimit, Log, Container, WriteWrap, RegisterLink, HomeBtn, HomePic, HomeTxt, SearchWrap, LogInBtn, SearchList } from './style'
 import { CSSTransition } from 'react-transition-group'
 import { connect } from 'react-redux'
 
@@ -22,6 +22,7 @@ const Header = (props) => {
                         <CSSTransition in={props.focused} timeout={500} classNames="search">
                             <SearchWrap>
                                 <input placeholder="搜索" className="input-search" onFocus={props.inputFocus} onBlur={props.inputBlur}/>
+                                <SearchList></SearchList>
                             </SearchWrap>
                         </CSSTransition>
                         <LogInBtn>登陆</LogInBtn>

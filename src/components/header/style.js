@@ -117,6 +117,7 @@ export const HomeTxt = styled.span`
 `
 export const SearchWrap = styled.div`
     float: left;
+    box-sizing: border-box;
     height: 100%;
     width: 240px;
     padding-top: 9px;
@@ -180,4 +181,13 @@ export const LogInBtn = styled.a`
     color: #969696;
     font-size: 14px;
     cursor: pointer;
+`
+export const SearchList = styled.div`
+    position: absolute;
+    left: 0;
+    top: 49px;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 0 5px #bdbcbc;
+    background-color: #fff;
 `
