@@ -187,7 +187,19 @@ export const SearchList = styled.div`
     left: 0;
     top: 49px;
     width: 100%;
+    box-sizing: border-box;
     height: 200px;
     box-shadow: 0 0 5px #bdbcbc;
     background-color: #fff;
+    padding: 10px;
+    .list-item {
+        height: 20px;
+        line-height: 20px;
+        padding: 0px 10px;
+        font-size: 14px;
+        color: #999;
+        border: 1px solid #ccc;
+        display: inline-block;
+        margin: 0 10px 10px;
+    }
 `
