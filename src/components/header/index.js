@@ -22,12 +22,18 @@ const Header = (props) => {
                         <CSSTransition in={props.focused} timeout={500} classNames="search">
                             <SearchWrap>
                                 <input placeholder="搜索" className="input-search" onFocus={props.inputFocus} onBlur={props.inputBlur}/>
-                                <SearchList>
-                                    <div className="list-item">故宫博物院</div>
-                                    <div className="list-item">故宫博物院</div>
-                                    <div className="list-item">故宫博物院</div>
-                                    <div className="list-item">故宫博物院</div>
-                                </SearchList>
+                                {
+                                    props.focused
+                                    ?
+                                    <SearchList>
+                                        <div className="list-item">故宫博物院</div>
+                                        <div className="list-item">故宫博物院</div>
+                                        <div className="list-item">故宫博物院</div>
+                                        <div className="list-item">故宫博物院</div>
+                                    </SearchList>
+                                    :
+                                    ""
+                                }
                             </SearchWrap>
                         </CSSTransition>
                         <LogInBtn>登陆</LogInBtn>
