@@ -184,9 +184,9 @@ export const LogInBtn = styled.a`
 `
 export const SearchList = styled.div`
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 49px;
-    width: 100%;
+    width: 320px;
     box-sizing: border-box;
     height: 200px;
     box-shadow: 0 0 5px #bdbcbc;
