@@ -182,7 +182,7 @@ export const LogInBtn = styled.a`
     font-size: 14px;
     cursor: pointer;
 `
-export const SearchList = styled.div`
+export const SearchInfo = styled.div`
     position: absolute;
     left: 10px;
     top: 49px;
@@ -192,6 +192,27 @@ export const SearchList = styled.div`
     box-shadow: 0 0 5px #bdbcbc;
     background-color: #fff;
     padding: 10px;
+    .title-wrap {
+        height: 20px;
+        padding: 0 10px 10px;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 20px;
+        .switch-btn {
+            float: right;
+            cursor: pointer;
+            user-select: none;
+            .refresh-btn {
+                font-family: "refresh" !important;
+                font-size: 16px;
+                font-style: normal;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+    }
+`
+export const SearchList = styled.div`
     .list-item {
         height: 20px;
         line-height: 20px;
@@ -202,4 +223,4 @@ export const SearchList = styled.div`
         display: inline-block;
         margin: 0 10px 10px;
     }
-`
+` 

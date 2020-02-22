@@ -1,0 +1,16 @@
+{
+  "id": "1648953",
+  "name": "react 简书",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3544204",
+      "name": "刷新",
+      "font_class": "ico_reset",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    }
+  ]
+}

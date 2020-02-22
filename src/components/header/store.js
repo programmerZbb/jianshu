@@ -1,17 +1,28 @@
-import { SEARCH_FOCUS } from '../../store/actionCreate'
+import { SEARCH_FOCUS, GET_SEARCH_LIST, MOUSE_IN, MOUSE_OUT, LIST_DATA } 
+    from './constants'
 import { fromJS } from 'immutable'
 
-const defaultState = fromJS({
+const $$defaultState = fromJS({
     focused: false,
-    searchList: []
+    searchList: [],
+    page: 1,
+    totalPage: 0,
+    mouseIn: false
 })
 
-export default (state = defaultState, action) => {
-    if (action.type === SEARCH_FOCUS) {
-        state = defaultState.set('focused', action.value)
+export default (state = $$defaultState, action) => {
+    switch(action.type) {
+        case SEARCH_FOCUS:
+            return state.set('focused', action.value)
+        case GET_SEARCH_LIST:
+            return state.set('searchList', fromJS(action.value)).set('focused', true).set('totalPage', Math.ceil(action.value.length / 10))
+        case MOUSE_IN:
+            return state.set('mouseIn', true)
+        case MOUSE_OUT:
+            return state.set('mouseIn', false)
+        case LIST_DATA:
+            return state.set('page', action.value)
+        default:
+            return state    
     }
-    if (action.type === 'get_search_list') {
-        state = defaultState.set('searchList', fromJS(action.value))
-    }
-    return state
 }
