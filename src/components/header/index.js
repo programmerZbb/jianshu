@@ -27,7 +27,7 @@ const Header = (props) => {
             <div className="title-wrap">
                 热门搜索
                 <div className="switch-btn" onClick={() => { getCurrentPage(page, totalPage) }}>
-                    <i className="refresh-btn">&#xe666;</i>
+                    <span className="refresh-btn">&#xe666;</span>
                     换一换
                 </div>
             </div>
