@@ -4,7 +4,10 @@ import {
     HomeWrapperLeft,
     HomeWrapperRight,
     ListWrapper,
-    NavWrapper
+    NavWrapper,
+    NavItem,
+    RecommendWrapper,
+    RecommendItem
 } from './style'
 
 class Home extends Component {
@@ -23,7 +26,24 @@ class Home extends Component {
                         <div className="list-item">
                             <div className="content">
                                 <div className="title">
-                                    你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香
+                                    <a href="/" target="_blank">
+                                        你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香
+                                    </a>
+                                </div>
+                                <div className="content-detail">
+                                    程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...
+                                </div>
+                            </div>
+                            <div className="content-img">
+                                <img alt="" src="https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"></img>
+                            </div>
+                        </div>
+                        <div className="list-item">
+                            <div className="content">
+                                <div className="title">
+                                    <a href="/home" target="_blank">
+                                        你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香
+                                    </a>
                                 </div>
                                 <div className="content-detail">
                                     程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...
@@ -37,8 +57,24 @@ class Home extends Component {
                 </HomeWrapperLeft>
                 <HomeWrapperRight>
                     <NavWrapper>
-                        <div className="nav-item"></div>
+                        <NavItem></NavItem>
                     </NavWrapper>
+                    <RecommendWrapper>
+                        <div className="recom-title">
+                            <div className="title-box">推荐作者</div>
+                            <div className="refresh-recom"><span className="refresh-btn">&#xe666;</span> 换一批</div>
+                        </div>
+                        <RecommendItem>
+                            <div className="author-img">
+                                <img src="https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp" alt=""></img>
+                            </div>
+                            <div className="author-info">
+                                <div className="author-name">隔夜说</div>
+                                <div className="author-create">写了1429.3k字 · 29.4k喜欢</div>
+                            </div>
+                            <div className="follow-btn">+ 关注</div>
+                        </RecommendItem>
+                    </RecommendWrapper>
                 </HomeWrapperRight>
             </HomeWrapper>
         )
