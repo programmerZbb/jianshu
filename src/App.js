@@ -4,7 +4,8 @@ import Home from './pages/home'
 import { GlobalStyle } from './common/base.css'
 import { FontStyle } from './common/font'
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import routerConf from './router'
 import store from './store'
 
 function App() {

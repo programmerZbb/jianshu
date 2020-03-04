@@ -1,4 +1,8 @@
 import React, {Component} from 'react'
+import { connect } from 'react-redux'
+import {
+    getList
+} from './store/actionCreator'
 import {
     HomeWrapper,
     HomeWrapperLeft,
@@ -15,6 +19,11 @@ class Home extends Component {
         super(props)
         this.state = {}
     }
+    
+    componentDidMount () {
+        this.props.getHomeData()
+    }
+
     render () {
         return (
             <HomeWrapper>
@@ -81,4 +90,13 @@ class Home extends Component {
     }
 }
 
-export default Home
+const mapStateToProps = (state) => ({
+
+}) 
+const mapDispatchToProps = (dispatch) => ({
+    getHomeData () {
+        dispatch(getList())
+    }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

@@ -1,0 +1,119 @@
+{
+    "code": "0",
+    "message": "success",
+    "data": {
+        "contentList": [
+            {
+                "id": "1",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "2",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "3",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "4",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "5",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "6",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "7",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": "8",
+                "title": "你敢玩程序员的电脑吗？网友：不敢了，没有下次了！ 真香",
+                "content": "程序员是一个天天和电脑打交道的群体，程序员肯定是最了解电脑的群体了，在外人看来，程序员用电脑就是得心应手啊，那么程序员使用电脑和平常人有什么区别...",
+                "cover": "https://upload-images.jianshu.io/upload_images/14212122-c28a36ebe9fdb951.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            }
+        ],
+        "navList": [
+            {
+                "id": "1",
+                "bgImg": "https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png",
+                "link": "#"
+            },
+            {
+                "id": "2",
+                "bgImg": "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png",
+                "link": "#"
+            },
+            {
+                "id": "3",
+                "bgImg": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png",
+                "link": "#"
+            },
+            {
+                "id": "4",
+                "bgImg": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png",
+                "link": "#"
+            }
+        ],
+        "recommendList": [{
+            "id": 14715425,
+            "slug": "c5a2ce84f60b",
+            "nickname": "简书钻首席小管家",
+            "avatar_source": "https://upload.jianshu.io/users/upload_avatars/14715425/e0668349-8c75-43db-8a9d-c388e5f00d0d.jpg",
+            "total_likes_count": 164827,
+            "total_wordage": 290370,
+            "is_following_user": false
+        }, {
+            "id": 9988193,
+            "slug": "51b4ef597b53",
+            "nickname": "董克平日记",
+            "avatar_source": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+            "total_likes_count": 3064,
+            "total_wordage": 869859,
+            "is_following_user": false
+        }, {
+            "id": 301940,
+            "slug": "ef4f2422125f",
+            "nickname": "卢璐说",
+            "avatar_source": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg",
+            "total_likes_count": 29580,
+            "total_wordage": 1440909,
+            "is_following_user": false
+        }, {
+            "id": 3730494,
+            "slug": "ffc565d738a3",
+            "nickname": "格列柯南",
+            "avatar_source": "https://upload.jianshu.io/users/upload_avatars/3730494/4a86a2a7-d5b9-47f1-969a-d8ef4711488b.jpg",
+            "total_likes_count": 43981,
+            "total_wordage": 761601,
+            "is_following_user": false
+        }, {
+            "id": 3343569,
+            "slug": "b3b2c03354f3",
+            "nickname": "吴晓布",
+            "avatar_source": "https://upload.jianshu.io/users/upload_avatars/3343569/6940ee65-036f-4b7a-9935-5915d9b67d14.jpg",
+            "total_likes_count": 24816,
+            "total_wordage": 744512,
+            "is_following_user": false
+        }]
+    }
+}

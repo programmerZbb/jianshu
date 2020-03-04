@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-const itemBg = 'https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png'
+const itemBg = ''
 
 export const HomeWrapper = styled.div`
     width: 960px;
