@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { CHANGE_LIST } from './constants'
+import { CHANGE_LIST, UPDATE_HOME } from './constants'
 
 export const getHomeData = (value) => ({
     type: CHANGE_LIST,
@@ -9,7 +9,22 @@ export const getHomeData = (value) => ({
 export const getList = () => ((dispatch) => {
     axios.get('/api/home-list.json')
         .then(res => {
-            console.log(res)
+            dispatch(getHomeData(res.data.data))
+        })
+        .catch(err => {
+            console.log(err)
+        })
+})
+
+export const upHomeData = (value) => ({
+    type: UPDATE_HOME,
+    value
+})
+
+export const updateHomeLs = () => ((dispatch) => {
+    axios.get('/api/content-list.json')
+        .then(res => {
+            dispatch(upHomeData(res.data.data.contentList))
         })
         .catch(err => {
             console.log(err)

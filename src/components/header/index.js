@@ -101,7 +101,6 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(mouseOutAction())
         },
         getCurrentPage (page, totalPage) {
-            console.log(page, totalPage)
             if (page < totalPage) {
                 dispatch(getPage(page + 1))
             } else {

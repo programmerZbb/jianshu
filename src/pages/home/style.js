@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-const itemBg = ''
 
 export const HomeWrapper = styled.div`
     width: 960px;
@@ -64,17 +63,19 @@ export const NavWrapper = styled.div`
     padding-bottom: 4px;
     min-height: 228px;
 `
-export const NavItem = styled.div`
+export const NavItem = styled.a`
+    display: inline-block;
     width: 100%;
     min-height: 50px;
     cursor: pointer;
     margin-bottom: 6px;
     border-radius: 4px;
-    background: url(${itemBg}) no-repeat center bottom;
+    background: url(${props => props.bgImg}) no-repeat center bottom;
     background-size: auto 50px;
 `
 export const RecommendWrapper = styled.div`
     width: 100%;
+    margin-top: 20px;
     .recom-title {
         color: #969696;
         font-size: 14px;
@@ -117,6 +118,7 @@ export const RecommendItem = styled.div`
             font-size: 14px;
             color: #000;
             line-height: 25px;
+            cursor: pointer;
         }
         .author-create {
             font-size: 12px;
@@ -132,4 +134,15 @@ export const RecommendItem = styled.div`
         font-size: 14px;
         line-height: 20px;
     }
+`
+export const ShowMoreBtn = styled.div`
+    width: 100%;
+    background-color: #1c367775;
+    height: 30px;
+    border-radius: 14px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
 `
