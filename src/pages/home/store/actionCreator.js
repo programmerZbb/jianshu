@@ -7,9 +7,10 @@ export const getHomeData = (value) => ({
 })
 
 export const getList = () => ((dispatch) => {
-    axios.get('/api/home-list.json')
+    axios.get('/api/content-list.json')
         .then(res => {
-            dispatch(getHomeData(res.data.data))
+            // dispatch(getHomeData(res.data.data))
+            console.log(res,'-----测试')
         })
         .catch(err => {
             console.log(err)

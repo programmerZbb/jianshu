@@ -2,7 +2,8 @@ import axios from 'axios'
 import {
     MOUSE_IN,
     MOUSE_OUT,
-    LIST_DATA
+    LIST_DATA,
+    SHOW_BACK
 } from './constants'
 
 const getSearchList = (value) => (
@@ -47,4 +48,9 @@ export const mouseOutAction = () => ({
 export const getPage = (page) => ({
     type: LIST_DATA,
     value: page
+})
+
+export const backTopShow = (value) => ({
+    type: SHOW_BACK,
+    value
 })

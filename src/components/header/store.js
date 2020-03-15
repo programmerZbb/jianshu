@@ -1,4 +1,4 @@
-import { SEARCH_FOCUS, GET_SEARCH_LIST, MOUSE_IN, MOUSE_OUT, LIST_DATA } 
+import { SEARCH_FOCUS, GET_SEARCH_LIST, MOUSE_IN, MOUSE_OUT, LIST_DATA, SHOW_BACK } 
     from './constants'
 import { fromJS } from 'immutable'
 
@@ -7,7 +7,8 @@ const $$defaultState = fromJS({
     searchList: [],
     page: 1,
     totalPage: 0,
-    mouseIn: false
+    mouseIn: false,
+    showBack: false
 })
 
 export default (state = $$defaultState, action) => {
@@ -22,6 +23,8 @@ export default (state = $$defaultState, action) => {
             return state.set('mouseIn', false)
         case LIST_DATA:
             return state.set('page', action.value)
+        case SHOW_BACK: 
+            return state.set('showBack', action.value)
         default:
             return state    
     }

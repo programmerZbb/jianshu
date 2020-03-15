@@ -23,6 +23,7 @@ class Home extends Component {
     
     componentDidMount () {
         this.props.getHomeData()
+        this.setCookie()
     }
 
     getContentList () {
@@ -45,6 +46,10 @@ class Home extends Component {
                 </div>
             </div>
         ))
+    }
+
+    setCookie () {
+        document.cookie = 'test=aaaaa'
     }
 
     getRecomendLs () {

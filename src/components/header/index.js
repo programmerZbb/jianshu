@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { HeaderWrapper, WidthLimit, Log, Container, WriteWrap, RegisterLink, HomeBtn, HomePic, HomeTxt, SearchWrap, LogInBtn, SearchList, SearchInfo } from './style'
+import { HeaderWrapper, WidthLimit, Log, Container, WriteWrap, RegisterLink, HomeBtn, HomePic, HomeTxt, SearchWrap, LogInBtn, SearchList, SearchInfo, BackTop } from './style'
 import { CSSTransition } from 'react-transition-group'
 import { connect } from 'react-redux'
 import { 
@@ -8,12 +8,13 @@ import {
     InitSearchLs,
     mouseInAction,
     mouseOutAction,
-    getPage
+    getPage,
+    backTopShow
  } from './actionsCreate'
 
 // 使用 react-redux 能报header 组件简化成无状态组件
 const Header = (props) => {
-    let { focused, searchList, page, totalPage, inputFocus, inputBlur, mouseIn, handleMouseIn, handleMouseOut, getCurrentPage } = props
+    let { focused, searchList, page, totalPage, inputFocus, inputBlur, mouseIn, handleMouseIn, handleMouseOut, getCurrentPage, showBack, changeBackTop } = props
     const getSearchInfo = () => {
         const currentList = []
         const newList = searchList.toJS()
@@ -41,6 +42,29 @@ const Header = (props) => {
             </SearchList>
         </SearchInfo>
     )}
+    const handleBackTop = () => {
+        window.scrollTo(0, 0)
+    }
+    const bindScroll = () => {
+        document.documentElement.style.transition = "all 1s ease-out"
+        // window.addEventListener('scroll', throttle(changeBackTop, 1000))
+        console.log('执行几次')
+        window.onscroll = throttle(changeBackTop, 1000)
+    }
+    const throttle = function(fn, wait) {
+        let timer = null
+        return function () {
+            let arg = arguments
+            if(!timer) {
+                timer = null
+                timer = setTimeout(() => {
+                    console.log('--------------------不是吧')
+                    fn.apply(this, arg)
+                    timer = null
+                }, wait)
+            }
+        }
+    }
     return (
         <Fragment>
             <HeaderWrapper>
@@ -72,6 +96,16 @@ const Header = (props) => {
                     <WriteWrap>写文章</WriteWrap>
                     <RegisterLink>注册</RegisterLink>
                 </WidthLimit>
+                {
+                    showBack
+                    ?
+                    <BackTop onClick={() => { handleBackTop() }}></BackTop>
+                    :
+                    ""
+                }
+                {
+                    bindScroll()
+                }
             </HeaderWrapper>
         </Fragment>
     )
@@ -83,6 +117,7 @@ const mapStateToProps = (state) => {
         mouseIn: state.getIn(['header', 'mouseIn']),
         page: state.getIn(['header', 'page']),
         totalPage: state.getIn(['header', 'totalPage']),
+        showBack: state.getIn(['header', 'showBack'])
     }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -106,6 +141,13 @@ const mapDispatchToProps = (dispatch) => {
             } else {
                 dispatch(getPage(1))
             }
+        },
+        changeBackTop () {
+            console.log(document.documentElement.scrollTop, window.pageYOffset, '-----测试')
+            if (document.documentElement.scrollTop > 400) {
+                return dispatch(backTopShow(true))
+            }
+            dispatch(backTopShow(false))
         }
     }
 }

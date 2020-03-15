@@ -4,6 +4,7 @@ import hometPic from '../../assets/img/home.svg'
 import downPic from '../../assets/img/download.svg'
 import search from '../../assets/img/search.svg'
 import searchSelected from '../../assets/img/search-selected.svg'
+import backTopImg from '../../assets/img/backtop.svg'
 
 export const HeaderWrapper = styled.div`
     height: 56px;
@@ -224,3 +225,15 @@ export const SearchList = styled.div`
         margin: 0 10px 10px;
     }
 ` 
+export const BackTop = styled.div`
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dccfcf;
+    position: fixed;
+    cursor: pointer;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    background: url(${backTopImg}) no-repeat center;
+    background-size: 30px 30px;
+`
